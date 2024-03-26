@@ -9,6 +9,8 @@ do {
     monedaUsuario = prompt("Por favor ingrese la moneda que desea convertir \nLas opciones disponibles son: USD, COP, EUR, YEN y BTC");
 } while (!monedasValidas.includes(monedaUsuario.toUpperCase()));
 
+monedaUsuario = monedaUsuario.toUpperCase();
+
 switch (monedaUsuario) {
 
     case "USD":
